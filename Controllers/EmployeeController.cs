@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
         ApplicationDbcontext context=new ApplicationDbcontext();
         public IActionResult Index()
         {
-            var employee = context.Employees.ToList();
+            var employee = context.employees.ToList();
             return View("index",employee);
         }
     }
